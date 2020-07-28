@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 header {
   height: 50px;
   display: flex;
@@ -14,4 +21,10 @@ header .menu {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 798px) {
+  header {
+    padding: 0 20px;
+  }
 }

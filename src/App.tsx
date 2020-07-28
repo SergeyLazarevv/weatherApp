@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Header } from './header';
 
 function App() {
 fetch("http://api.openweathermap.org/data/2.5/weather?q=Samara,ru&APPID=0cb0672cbaa9d7e3d59356e1bdbb7a31")
@@ -11,14 +12,7 @@ fetch("http://api.openweathermap.org/data/2.5/weather?q=Samara,ru&APPID=0cb0672c
 });
   return (
     <div className="App">
-      <header>
-        <img src='sun.png' className='logo' />
-        <ul className='menu'>
-          <li>About</li>
-          <li>News</li>
-          <li>Contacts</li>
-        </ul>
-      </header>
+      <Header />
     </div>
   );
 }
