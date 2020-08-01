@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
 header {
   height: 50px;
   display: flex;
@@ -22,14 +26,22 @@ header .menu {
   display: flex;
   justify-content: space-around;
 }
+.app {
+  background: url('./img/background.svg') center center;
+  background-size: cover;
+}
 .input-wrap {
+  transition: .8s ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 50px);
-  background-color: #fafafa;
+}
+.toTop {
+  transform: translateY(-40%);
 }
 .input {
+  margin-top: 50px;
   height: 50px;
   width: 80%;
   font-size: 1.3em;

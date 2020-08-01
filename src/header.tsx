@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Header() {
+export default function Header() {
     return (
         <header>
             <img src='sun.png' className='logo' />

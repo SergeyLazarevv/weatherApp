@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import background from './img/background.svg';
 import './App.css';
-import { Header } from './header';
+import Header from './header';
 
-interface IMyComponentState {
+interface AppComponentState {
   sity: string
 }
 
-class App extends React.Component <any,IMyComponentState>{
+class App extends React.Component <any,AppComponentState>{
   constructor(props: any) {
     super(props)
     this.state = {
@@ -22,7 +22,7 @@ class App extends React.Component <any,IMyComponentState>{
     .then(data => console.log(data))
     .then(data=>this.setState({sity: ''}))
     .catch(err => {
-	  console.log(err);
+	    console.log(err);
     });
   }
   setData = (event: any) => {
@@ -30,9 +30,9 @@ class App extends React.Component <any,IMyComponentState>{
   }
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header />
-        <form className="input-wrap" onSubmit={this.getData} >
+        <form className={this.state.sity ? "input-wrap toTop" : "input-wrap"} onSubmit={this.getData} >
           <input className="input" type="text" placeholder="Enter sity" onChange={this.setData} value={this.state.sity} />
         </form>
       </div>
