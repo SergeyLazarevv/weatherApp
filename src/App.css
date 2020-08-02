@@ -12,6 +12,9 @@ body {
 header {
   height: 50px;
   display: flex;
+  position: fixed;
+  top:0;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
@@ -29,19 +32,20 @@ header .menu {
 .app {
   background: url('./img/background.svg') center center;
   background-size: cover;
-}
-.input-wrap {
-  transition: .8s ease-in;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 50px);
 }
+.input-wrap {
+  transition: .8s ease-in;
+  text-align: center;
+}
 .toTop {
-  transform: translateY(-40%);
+  transform: translateY(-240%);
 }
 .input {
-  margin-top: 50px;
   height: 50px;
   width: 80%;
   font-size: 1.3em;
@@ -50,12 +54,20 @@ header .menu {
   border-radius: 30px;
   padding: 0 20px;
   text-align: center;
+  transition: .8s linear;
+}
+.input-close {
+  width: 18%;
+  padding: 0 0;
 }
 .input:focus {
   outline: none;
   border-color: rgba(10,200,10,.6);
 }
-
+.weatherInfo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
 @media screen and (max-width: 798px) {
   header {
     padding: 0 20px;
