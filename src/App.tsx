@@ -22,17 +22,6 @@ class App extends React.Component <any,AppComponentState>{
       data: 'no data'
     }
   }
-  componentDidMount() {
-    console.log('component did mount')
-  }
-  shouldComponentUpdate() {
-    console.log('should update?----')
-    console.log(this.state.data)
-    return true
-  }
-  conponentDidUpdate() {
-    console.log('component was update')
-  }
   getData = (event: any) => {
     event.preventDefault();
     let sity: string = this.state.sity;

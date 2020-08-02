@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 * {
   margin: 0;
@@ -28,6 +28,7 @@ header .menu {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  font-family: 'Fira Sans', sans-serif;
 }
 .app {
   background: url('./img/background.svg') center center;
@@ -68,7 +69,8 @@ header .menu {
   border-color: rgba(10,200,10,.6);
 }
 .weatherInfo {
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
 }
 @media screen and (max-width: 798px) {
