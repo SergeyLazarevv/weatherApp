@@ -36,25 +36,28 @@ header .menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 50px);
+  height: 100vh;
 }
 .input-wrap {
-  transition: .8s ease-in;
+  transition: .5s ease-in-out;
   text-align: center;
+}
+.input-hover {
+  cursor: pointer;
 }
 .toTop {
   transform: translateY(-240%);
 }
 .input {
   height: 50px;
-  width: 80%;
+  width: 100%;
   font-size: 1.3em;
   font-weight: bold;
   border: 2px solid rgba(109, 154, 218, 0.6);
   border-radius: 30px;
   padding: 0 20px;
   text-align: center;
-  transition: .8s linear;
+  transition: .5s linear;
 }
 .input-close {
   width: 18%;
